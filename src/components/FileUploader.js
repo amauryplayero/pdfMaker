@@ -2,6 +2,7 @@
 import React, {useState} from 'react'
 
 import * as XLSX from 'xlsx'
+import PdfMaker from './pdfMaker'
 
 export default function FileUploader() {
 
@@ -165,16 +166,12 @@ export default function FileUploader() {
     <br></br>
     <br></br>
     <br></br>
-    <input type="file" id="kardex" onChange={(e)=>{handleChange(e)}}></input>
+    {/* <input type="file" id="kardex" onChange={(e)=>{handleChange(e)}}></input> */}
+    <PdfMaker />
     <br></br>
     <br></br>
     <br></br>
     <br></br>
-
-    
-    {/* <p>selecciona archivo de alumnos</p>
-    <input type="file" id="lista" onChange={(e)=>{handleChange(e)}}></input>
-     */}
     </div>
     {/* <input type="submit"></input> */}
     </form>
